@@ -1,0 +1,11 @@
+# Segredos
+.env
+
+# Ambiente virtual e cache do Python
+.venv/
+__pycache__/
+*.py[oc]
+
+# Ficheiros de trabalho do agente (mantém só a pasta)
+workspace/*
+!workspace/.gitkeep

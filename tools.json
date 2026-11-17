@@ -1,0 +1,32 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "list_files",
+      "description": "List the names of all files in the user's workspace folder. Use it before read_file to get the exact filename.",
+      "parameters": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "read_file",
+      "description": "Return the text content of one file in the workspace folder.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string",
+            "description": "File name exactly as shown by list_files, e.g. notes.txt"
+          }
+        },
+        "required": [
+          "filename"
+        ]
+      }
+    }
+  }
+]
